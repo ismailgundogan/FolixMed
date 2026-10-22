@@ -1,0 +1,38 @@
+/* Top header only: removes unused separators and keeps the moon control legible. */
+.header-top-set-lan-curr{align-items:center}
+.header-top-set-lan-curr > *{border-left:0!important}
+.header-top-set-lan-curr .header-action-btn{border-left:0!important}
+.folix-theme-icon{display:inline-flex;align-items:center;justify-content:center;height:22px;font-size:23px!important;line-height:1!important;padding:0 0 0 12px!important}
+.folix-theme-icon i{font-size:23px!important;line-height:1}
+.folix-flag{display:inline-block;width:18px;height:12px;margin-right:7px;vertical-align:-2px}
+.home-medical .logo img{display:block;width:190px;height:55px;object-fit:contain;object-position:left center;filter:drop-shadow(0 2px 3px rgba(0,0,0,.2))}
+.home-medical .folix-logo-light img{filter:brightness(0) saturate(100%) invert(96%) sepia(11%) saturate(311%) hue-rotate(339deg) brightness(102%) contrast(96%) drop-shadow(0 2px 3px rgba(0,0,0,.2))}
+/* The original header's contact/cart slot is kept, with neutral product-help actions. */
+.home-medical .folix-header-actions{align-items:center;gap:31px}
+.home-medical .folix-info-link{margin:0}
+.home-medical .folix-info-link .phone{display:flex;align-items:center;gap:10px;padding-left:0}
+.home-medical .folix-info-link .phone:before{display:none}
+.home-medical .folix-info-link .phone i{font-size:31px;line-height:1;color:#fff}
+.home-medical .folix-info-link .phone p{margin:0;color:rgba(255,255,255,.8);font-size:12px;line-height:15px}
+.home-medical .folix-info-link .phone a{display:block;color:#fff;font-size:14px;font-weight:700;line-height:17px}
+.home-medical .folix-header-cta{margin:0}
+.home-medical .folix-header-cta__link{display:inline-flex;align-items:center;gap:7px;border:1px solid rgba(255,255,255,.65);padding:10px 13px;color:#fff;font-size:12px;font-weight:700;line-height:1;text-transform:uppercase;white-space:nowrap}
+.home-medical .folix-header-cta__link i{font-size:19px;line-height:1}
+.home-medical .folix-header-cta__link:hover{background:#fff;color:#0bbfbd}
+@media(max-width:1199px){.home-medical .folix-header-actions{gap:16px}.home-medical .folix-header-cta__link{padding:9px}}
+/* Keep the template's navigation bar, but use FolixMed's concise four-link menu. */
+.home-medical .main-navigation>ul{display:flex;align-items:center}
+.home-medical .main-navigation>ul>li:nth-child(1)>ul,.home-medical .main-navigation>ul>li:nth-child(3)>ul,.home-medical .main-navigation>ul>li:nth-child(4)>ul{display:none!important}
+.home-medical .main-navigation>ul>li:nth-child(2){order:-1}
+.home-medical .main-navigation>ul>li:nth-child(5){display:none}
+/* Existing mega-menu frame, populated with FolixMed products rather than template page links. */
+.home-medical .main-navigation ul.mega-menu-wrap{display:flex;align-items:stretch;padding:22px 26px!important;background:#f8f7f2!important}
+.home-medical .main-navigation ul.mega-menu-wrap>.folix-mega-product{width:19%!important;padding:0 12px!important;float:none!important}
+.home-medical .main-navigation ul.mega-menu-wrap>.folix-mega-product>a{display:block!important;height:100%;color:#17343b!important;text-transform:none!important;line-height:1.25!important}
+.home-medical .folix-mega-product img{display:block;width:100%;height:122px;object-fit:contain;mix-blend-mode:multiply;margin:0 auto 10px;filter:drop-shadow(2px 4px 4px rgba(24,52,59,.13))}
+.home-medical .folix-mega-product span{display:block;color:#168d9f;font-size:9px;font-weight:700;letter-spacing:.65px;line-height:1.3}
+.home-medical .folix-mega-product strong{display:block;margin-top:5px;font-size:12px;font-weight:600;line-height:1.35}
+.home-medical .main-navigation ul.mega-menu-wrap>.folix-mega-brand{display:flex;flex:1;flex-direction:column;justify-content:center;margin-left:12px;padding:0 0 0 27px!important;border-left:1px solid #d2ddda;float:none!important}
+.home-medical .folix-mega-brand>img{display:block;width:175px;height:48px;object-fit:contain;object-position:left center;mix-blend-mode:multiply;margin-bottom:12px}
+.home-medical .folix-mega-brand p{margin:0 0 12px;color:#62706d;font-size:12px;line-height:1.4}
+.home-medical .folix-mega-brand>a{display:inline-flex!important;align-items:center;gap:4px;color:#076457!important;font-size:10px!important;font-weight:700!important;line-height:1.2!important}.home-medical .folix-mega-brand>a i{font-size:18px}

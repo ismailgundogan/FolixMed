@@ -1,0 +1,25 @@
+/* FolixMed content for the two template promotional banners. */
+.folix-promo-banners { margin-top: 0; padding: 8px 0 62px; }
+.folix-promo-banner { min-height: 282px; position: relative; overflow: hidden; background-position: center; background-size: cover; }
+.folix-promo-banner--daily { background-image: url("../../../Gereksinimler/Tasarımlar/FolixMed_Slider_Seti/Illustrator/01_Inci_Studyo_1050x580.jpg"); }
+.folix-promo-banner--targeted { background-image: url("../../../Gereksinimler/Tasarımlar/FolixMed_Slider_Seti/Illustrator/02_Derin_Petrol_1050x580.jpg"); }
+.folix-promo-banner__content { position: relative; z-index: 3; width: 52%; padding: 45px 0 0 43px; }
+.folix-promo-banner__content span { display: block; margin-bottom: 10px; color: #087f7d; font-size: 10px; font-weight: 700; letter-spacing: 1.6px; }
+.folix-promo-banner__content h2 { margin: 0; color: #19383b; font-size: 29px; line-height: 1.08; font-weight: 700; }
+.folix-promo-banner__content p { margin: 13px 0 17px; color: #50686a; font-size: 13px; line-height: 1.45; }
+.folix-promo-banner__content a { display: inline-block; color: #075e59; font-size: 11px; font-weight: 700; letter-spacing: .35px; }
+.folix-promo-banner__content a i { margin-left: 6px; font-size: 18px; vertical-align: -2px; }
+.folix-promo-banner--targeted .folix-promo-banner__content span { color: #8dd8d4; }
+.folix-promo-banner--targeted .folix-promo-banner__content h2 { color: #fff; }
+.folix-promo-banner--targeted .folix-promo-banner__content p { color: rgba(255,255,255,.84); }
+.folix-promo-banner--targeted .folix-promo-banner__content a { color: #b9f2ed; }
+.folix-promo-banner__products { position: absolute; z-index: 2; display: flex; align-items: flex-end; gap: 7px; right: 5%; bottom: -1px; height: 88%; width: 48%; }
+.folix-promo-banner__products img { height: 92%; width: 31%; object-fit: contain; mix-blend-mode: multiply; }
+.folix-promo-banner__products img:nth-child(2) { height: 88%; }
+.folix-promo-banner__products img:nth-child(3) { height: 76%; }
+/* The serum asset includes its applicator, so its bounding box is allowed to sit at the right edge. */
+.folix-promo-banner__serum { position: absolute; z-index: 2; right: -22% !important; bottom: -8%; width: 42%; height: 116%; object-fit: contain; mix-blend-mode: screen; filter: brightness(1.13); }
+.folix-hidden-template-section { display: none; }
+@media (max-width: 1199px) { .folix-promo-banner__content { padding-left: 30px; width: 56%; } .folix-promo-banner__content h2 { font-size: 25px; } }
+@media (max-width: 767px) { .folix-promo-banners { padding-bottom: 42px; } .folix-promo-banner { min-height: 300px; } .folix-promo-banner__content { padding: 38px 25px; width: 59%; } .folix-promo-banner__products { right: 2%; width: 47%; } .folix-promo-banner__serum { right: -17% !important; width: 43%; } }
+@media (max-width: 440px) { .folix-promo-banner__content { width: 66%; } .folix-promo-banner__content h2 { font-size: 23px; } .folix-promo-banner__products { width: 42%; } .folix-promo-banner__serum { right: -16% !important; width: 45%; } }

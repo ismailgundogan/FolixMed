@@ -1,0 +1,16 @@
+/* Alternative parallax visual selected for review. The studio background remains in folixmed-quick-products.css as the fallback option. */
+.folix-parallax-surface {
+    background-image: linear-gradient(rgba(232,248,252,.72), rgba(232,248,252,.72)), url("../images/folixmed/folixmed-dropper-parallax.png");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.folix-parallax-surface .folix-quick-products__list,
+.folix-parallax-surface .folix-quick-products__feature {
+    box-shadow: 0 12px 30px rgba(19,69,81,.10);
+}
+
+@media (max-width: 767px) {
+    .folix-parallax-surface { background-attachment: scroll; }
+}

@@ -1,0 +1,22 @@
+/* Existing Demo 3 slider layout; only its supplied visual assets are replaced. */
+.folix-hero-slide{position:relative;overflow:hidden;background:#f7f6f1 url('../../../Gereksinimler/Tasarımlar/FolixMed_Slider_Seti/Illustrator/01_Inci_Studyo_1050x580-clean.jpg') center/cover no-repeat!important}
+.folix-hero-slide:after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(248,247,242,.94) 0%,rgba(248,247,242,.55) 47%,rgba(248,247,242,0) 70%);pointer-events:none}
+.folix-hero-slide .slider-content-18{position:relative;z-index:2}
+.folix-hero-slide .slider-content-18 h1{color:#253237}
+.folix-hero-slide .slider-content-18 p{color:#59645f;max-width:365px}
+.folix-hero-slide .shop-btn{background:#0bbfbd;border-color:#0bbfbd}
+.folix-hero-product{position:absolute;z-index:1;right:8%;bottom:-1%;height:96%;width:auto;max-width:37%;object-fit:contain;mix-blend-mode:multiply;filter:drop-shadow(9px 12px 11px rgba(37,50,55,.18))}
+.folix-hero-product--foam{right:9%;height:95%}
+.folix-hero-product--serum{right:11%;height:94%}
+.folix-product-lineup{position:relative;min-height:260px;overflow:hidden;background:linear-gradient(135deg,#f6f5f0 0%,#e9f2f1 100%)}
+.folix-side-copy{position:absolute;z-index:2;top:30px;left:29px;color:#253237}
+.folix-side-copy span,.folix-sales-info span{display:block;margin-bottom:7px;color:#168d9f;font-size:10px;font-weight:700;letter-spacing:.8px}
+.folix-side-copy strong,.folix-sales-info strong{display:block;font-size:21px;line-height:1.1;font-weight:700}
+.folix-side-products{position:absolute;display:flex;align-items:flex-end;right:9px;bottom:-10px;height:178px;width:78%}
+.folix-side-products img{display:block;min-height:0!important;width:33.333%!important;height:100%!important;object-fit:contain!important;mix-blend-mode:multiply;filter:drop-shadow(3px 6px 5px rgba(37,50,55,.12))}
+.folix-side-products img:nth-child(1){height:88%!important}.folix-side-products img:nth-child(2){height:93%!important}.folix-side-products img:nth-child(3){height:100%!important}
+.folix-sales-info{position:relative;display:flex;align-items:center;min-height:260px;padding:29px;background:linear-gradient(135deg,#063f3b 0%,#006455 56%,#0a7568 100%);color:#fff}
+.folix-sales-info:after{content:'';position:absolute;right:-52px;bottom:-75px;width:180px;height:180px;border:1px solid rgba(255,255,255,.13);border-radius:50%;pointer-events:none}
+.folix-sales-info span{color:#a8e4d9}.folix-sales-info p{margin:11px 0 17px;color:rgba(255,255,255,.82);font-size:12px;line-height:1.35}
+.folix-sales-info__link{display:inline-flex;align-items:center;gap:6px;border:1px solid rgba(255,255,255,.67);padding:9px 10px;color:#fff;font-size:9px;font-weight:700;letter-spacing:.15px;white-space:nowrap}.folix-sales-info__link i{font-size:17px;line-height:1}.folix-sales-info__link i:last-child{font-size:19px}.folix-sales-info__link:hover{background:#fff;color:#075c51}
+@media(max-width:767px){.folix-hero-slide:after{background:rgba(248,247,242,.65)}.folix-hero-product{right:3%;opacity:.64;height:88%;max-width:52%}}
