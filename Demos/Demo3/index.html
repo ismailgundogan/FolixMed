@@ -454,25 +454,11 @@
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-5">
-                            <!--Cart info Start -->
-                            <div class="cart-info d-flex m-0 justify-content-end">
-                                <div class="header-bottom-set dropdown hover-style-medical">
-                                    <button class="dropdown-toggle header-action-btn hover-style-medical"
-                                        data-bs-toggle="dropdown"> <i class="ion-person"></i></button>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="my-account.html">My account</a></li>
-                                        <li><a class="dropdown-item" href="checkout.html">Checkout</a></li>
-                                        <li><a class="dropdown-item" href="login.html">Sign in</a></li>
-                                    </ul>
-                                </div>
-                                <div class="mini-cart-warp mobile-view-color">
-                                    <a href="#offcanvas-cart" class="count-cart offcanvas-toggle color-black">
-                                        <span class="amount-tag">$20.00</span>
-                                        <span class="item-quantity-tag">02</span>
-                                    </a>
-                                </div>
+                            <div class="folix-mobile-theme-wrap d-flex justify-content-end">
+                                <button type="button" class="folix-mobile-theme" aria-label="Dark mode">
+                                    <i class="ion-ios-moon-outline" aria-hidden="true"></i>
+                                </button>
                             </div>
-                            <!--Cart info End -->
                         </div>
                     </div>
                 </div>
@@ -634,14 +620,14 @@
         <!-- OffCanvas Menu Start -->
         <div id="offcanvas-mobile-menu" class="offcanvas offcanvas-mobile-menu hover-style-medical">
             <button class="offcanvas-close"></button>
-            <!-- contact Info -->
-            <div class="contact-info d-flex align-items-center justify-content-center color-black py-3">
+            <!-- Template-only contact block is not used in the FolixMed mobile menu. -->
+            <div class="contact-info d-none align-items-center justify-content-center color-black py-3">
                 <img class="me-3" src="assets/images/icons/mobile-contact.png" alt="">
                 <p>Call us:</p>
                 <a class="color-black" href="tel:(+800)345678">(+800)345678</a>
             </div>
-            <!-- offcanvas compare & wishlist -->
-            <div class="user-panel">
+            <!-- Template-only compare / wishlist block is not used in the FolixMed mobile menu. -->
+            <div class="user-panel d-none">
                 <ul class="d-flex justify-content-between">
                     <li class="m-0">
                         <a href="compare.html"><i class="ion-ios-shuffle-strong"></i>Compare (0)</a>
@@ -651,31 +637,25 @@
                     </li>
                 </ul>
             </div>
-            <!-- offcanvas currency -->
-            <div class="offcanvas-userpanel">
-                <ul>
-                    <li class="offcanvas-userpanel__role">
-                        <a href="#">USD $ <i class="ion-ios-arrow-down"></i></a>
-                        <ul class="user-sub-menu">
-                            <li><a class="current" href="#">USD $</a></li>
-                            <li><a href="#">EUR €</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <!-- offcanvas language -->
-            <div class="offcanvas-userpanel">
+            <!-- offcanvas language: same two-language choice as the desktop header. -->
+            <div class="offcanvas-userpanel folix-mobile-language">
                 <ul>
                     <li class="offcanvas-userpanel__role">
                         <a href="#"><img src="assets/images/icons/1.jpg" alt="">English <i
                                 class="ion-ios-arrow-down"></i></a>
                         <ul class="user-sub-menu">
                             <li><a class="current" href="#"><img src="assets/images/icons/1.jpg" alt="">English</a></li>
-                            <li><a href="#"><img src="assets/images/icons/2.jpg" alt=""> Français</a></li>
+                            <li><a href="#"><svg class="folix-flag" viewBox="0 0 18 12" aria-hidden="true"><rect width="18" height="12" rx="1" fill="#e30a17"/><circle cx="7" cy="6" r="3.25" fill="#fff"/><circle cx="7.9" cy="5.55" r="2.65" fill="#e30a17"/><path d="M11.3 4.35l.55 1.15 1.25.16-.92.88.22 1.24-1.1-.61-1.1.61.22-1.24-.92-.88 1.25-.16z" fill="#fff"/></svg>Türkçe</a></li>
                         </ul>
                     </li>
                 </ul>
             </div>
+            <nav class="folix-mobile-links" aria-label="FolixMed mobile navigation">
+                <a href="#">Shop <i class="ion-ios-arrow-right" aria-hidden="true"></i></a>
+                <a href="#">About FolixMed</a>
+                <a href="#">Hair &amp; Scalp Care</a>
+                <a href="#">Contact</a>
+            </nav>
             <div class="menu-close">
                 menu
             </div>

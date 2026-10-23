@@ -99,6 +99,13 @@ body {
 }
 .folix-language-switch a { color: inherit; text-decoration: none; }
 .folix-language-switch a.is-active { color: var(--text-color-one); }
+.folix-mobile-language-switch { display: none; }
+@media (max-width: 1199px) {
+  .folix-mobile-language-switch { align-items: center; border-bottom: 1px solid var(--border-color2); border-top: 1px solid var(--border-color2); display: flex; font-size: .78rem; gap: .45rem; letter-spacing: .08em; margin: 1.25rem 0; padding: .85rem 0; text-transform: uppercase; }
+  .folix-mobile-language-switch > span:first-child { color: var(--text-color-two); margin-right: auto; }
+  .folix-mobile-language-switch a { color: var(--text-color-two); font-weight: 600; text-decoration: none; }
+  .folix-mobile-language-switch a.is-active { color: var(--text-color-one); }
+}
 .folix-theme-toggle {
   align-items: center;
   background: transparent;
@@ -533,6 +540,9 @@ body.is-dark .folix-language-switch,
 body.is-dark .folix-language-switch a,
 body.is-dark .folix-theme-toggle { color: #edf1e9; }
 body.is-dark .folix-language-switch a.is-active { color: #fff; }
+body.is-dark .folix-mobile-language-switch { border-color: #4b574d; }
+body.is-dark .folix-mobile-language-switch, body.is-dark .folix-mobile-language-switch a { color: #dce3d8; }
+body.is-dark .folix-mobile-language-switch a.is-active { color: #fff; }
 body.is-dark .folix-mega-menu__panel { background: #1b2520; border-color: #4b574d; box-shadow: 0 1.15rem 2.8rem rgba(0, 0, 0, .32); }
 body.is-dark .folix-mega-menu__intro,
 body.is-dark .folix-mega-menu__links { border-color: #4b574d; }
@@ -658,12 +668,16 @@ body.is-dark .folix-routine { background-color: #1d2822; background-image: radia
   .trending-product-wrapper .row > div { width: 50%; }
   .folix-routine h2 { max-width: 14ch; }
   .folix-product-view__image { min-height: 24rem; }
-  .intro1.folix-hero--single { min-height: 54rem; padding: 3rem 0 2rem; }
-  .intro1.folix-hero--single::before { background: linear-gradient(180deg, rgba(255,255,252,.97) 0%, rgba(255,255,252,.9) 55%, rgba(255,255,252,.18) 100%); content: ""; inset: 0; pointer-events: none; position: absolute; z-index: 2; }
+  .intro1.folix-hero--single { min-height: 0; padding: 2.5rem 0 0; }
+  .intro1.folix-hero--single::before { display: none; }
   .intro1.folix-hero--single .intro1__content { position: relative; z-index: 3; }
   .intro1.folix-hero--single .intro1__content-title { font-size: clamp(2.6rem, 8vw, 4rem); max-width: 14ch; }
   .intro1.folix-hero--single .intro1__content-desc { max-width: 33rem; }
-  .folix-hero-benefits { max-width: 35rem; }
+  .intro1.folix-hero--single .folix-hero-benefits { display: none; }
+  .intro1.folix-hero--single .folix-hero-carousel { margin-top: 1.5rem; }
+  .intro1.folix-hero--single .folix-hero-carousel .carousel-inner,
+  .intro1.folix-hero--single .folix-hero-carousel .carousel-item { height: clamp(13rem, 52vw, 18rem); }
+  .intro1.folix-hero--single .folix-hero-carousel .carousel-item { background-position: 80% center; background-size: auto 100%; }
   .folix-products__grid { grid-template-columns: 1fr; }
   .folix-product-card, .folix-product-card:first-child { border: 1px solid var(--border-color2); border-bottom: 0; }
   .folix-product-card:last-child { border-bottom: 1px solid var(--border-color2); }
@@ -704,14 +718,11 @@ body.is-dark .folix-routine { background-color: #1d2822; background-image: radia
   .folix-detail-footer__main { grid-template-columns: 1fr; }
   .folix-detail-footer__bottom { align-items: flex-start; flex-direction: column; gap: .75rem; }
   .folix-detail-footer__bottom a { margin-left: 0; margin-right: 1.25rem; }
-  .intro1.folix-hero--single { min-height: 58rem; padding-top: 2.5rem; }
+  .intro1.folix-hero--single { min-height: 0; padding-top: 2rem; }
   .intro1.folix-hero--single .intro1__content-title { font-size: clamp(2.25rem, 10.5vw, 3rem); }
   .intro1.folix-hero--single .intro1__content-desc { font-size: .88rem; line-height: 1.4; }
-  .folix-hero-benefits__ingredients, .folix-hero-benefits__assurances { grid-template-columns: repeat(2, 1fr); }
-  .folix-hero-benefits__ingredients > div { border-bottom: 1px solid rgba(21,80,94,.22); min-height: 4.9rem; }
-  .folix-hero-benefits__ingredients > div:nth-child(2n), .folix-hero-benefits__assurances > div:nth-child(2n) { border-right: 0; }
-  .folix-hero-benefits__assurances { margin-top: 0; }
-  .folix-hero-benefits__assurances > div { border-bottom: 1px solid rgba(21,80,94,.22); min-height: 3.5rem; padding-top: .45rem; }
-  .folix-hero-benefits strong { font-size: .7rem; }
-  .folix-hero-benefits span, .folix-hero-benefits__assurances span { font-size: .6rem; }
+  .intro1.folix-hero--single .folix-hero-carousel { margin-top: 1.1rem; }
+  .intro1.folix-hero--single .folix-hero-carousel .carousel-inner,
+  .intro1.folix-hero--single .folix-hero-carousel .carousel-item { height: 12.5rem; }
+  .intro1.folix-hero--single .folix-hero-carousel .carousel-item { background-position: 82% center; }
 }

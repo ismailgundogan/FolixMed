@@ -29,17 +29,22 @@
     .home-medical .mobile-navigation .logo{display:flex;justify-content:center;width:100%}
     .home-medical .mobile-navigation .logo img{width:148px;height:42px;object-fit:contain;object-position:center;filter:none!important}
     .home-medical .mobile-navigation .mobile-menu{display:flex;align-items:center;height:42px;font-size:34px;line-height:1;color:#253237}
-    .home-medical .mobile-navigation .cart-info{height:42px;align-items:center}
-    .home-medical .mobile-navigation .header-bottom-set{display:none}
-    .home-medical .mobile-navigation .count-cart{padding:0!important;font-size:27px;line-height:1}
-    .home-medical .mobile-navigation .amount-tag{display:none!important}
-    .home-medical .mobile-navigation .item-quantity-tag{top:-7px;right:-12px;min-width:19px;height:19px;line-height:19px;font-size:10px}
+    .home-medical .folix-mobile-theme-wrap{height:42px;align-items:center}
+    .home-medical .folix-mobile-theme{display:inline-flex;align-items:center;justify-content:center;width:42px;height:42px;padding:0;border:0;border-radius:50%;background:#f1f7f6;color:#254548;font-size:25px;line-height:1}
+    .home-medical .folix-mobile-theme:hover{background:#0bbfbd;color:#fff}
     .home-medical .mobile-search-option{padding:0 0 20px!important}
     .home-medical .mobile-search-option .container-fluid{padding:0 20px}
     .home-medical .mobile-search-option .dropdown-search{width:100%;left:auto;display:block}
     .home-medical .mobile-search-option .search-category{display:none!important}
     .home-medical .mobile-search-option input{height:48px;padding:10px 66px 10px 18px;border-radius:26px;font-size:14px}
     .home-medical .mobile-search-option button{width:62px;height:48px;line-height:48px;border-radius:0 26px 26px 0}
+    .offcanvas-mobile-menu .folix-mobile-language{border-top:1px solid #eee}
+    .offcanvas-mobile-menu .folix-mobile-language img,.offcanvas-mobile-menu .folix-mobile-language svg{width:18px;height:12px;margin-right:7px;vertical-align:-1px}
+    .offcanvas-mobile-menu .folix-mobile-links{display:block;padding:9px 20px 18px}
+    .offcanvas-mobile-menu .folix-mobile-links a{display:flex;align-items:center;justify-content:space-between;padding:14px 0;border-bottom:1px solid #eee;color:#253237;font-size:15px;font-weight:600}
+    .offcanvas-mobile-menu .folix-mobile-links a:last-child{border-bottom:0}
+    .offcanvas-mobile-menu .folix-mobile-links a i{font-size:19px;color:#0bbfbd}
+    .offcanvas-mobile-menu .offcanvas-menu{display:none}
 }
 /* Keep the template's navigation bar, but use FolixMed's concise four-link menu. */
 .home-medical .main-navigation>ul{display:flex;align-items:center}
