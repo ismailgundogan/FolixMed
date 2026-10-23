@@ -19,4 +19,15 @@
 .folix-sales-info:after{content:'';position:absolute;right:-52px;bottom:-75px;width:180px;height:180px;border:1px solid rgba(255,255,255,.13);border-radius:50%;pointer-events:none}
 .folix-sales-info span{color:#a8e4d9}.folix-sales-info p{margin:11px 0 17px;color:rgba(255,255,255,.82);font-size:12px;line-height:1.35}
 .folix-sales-info__link{display:inline-flex;align-items:center;gap:6px;border:1px solid rgba(255,255,255,.67);padding:9px 10px;color:#fff;font-size:9px;font-weight:700;letter-spacing:.15px;white-space:nowrap}.folix-sales-info__link i{font-size:17px;line-height:1}.folix-sales-info__link i:last-child{font-size:19px}.folix-sales-info__link:hover{background:#fff;color:#075c51}
-@media(max-width:767px){.folix-hero-slide:after{background:rgba(248,247,242,.65)}.folix-hero-product{right:3%;opacity:.64;height:88%;max-width:52%}}
+@media(max-width:767px){
+    .folix-hero-slide{height:480px!important;min-height:480px;background-position:65% center!important;align-items:flex-start!important}
+    .folix-hero-slide:after{background:linear-gradient(180deg,rgba(248,247,242,.96) 0%,rgba(248,247,242,.88) 53%,rgba(248,247,242,.26) 100%)}
+    .folix-hero-slide .slider-content-18{align-self:flex-start!important;width:100%;max-width:none;margin:0!important;padding:34px 28px 0}
+    .folix-hero-slide .slider-content-18 h1{max-width:290px;margin-bottom:14px;font-size:34px;line-height:1.1}
+    .folix-hero-slide .slider-content-18 p{max-width:280px;margin-bottom:20px;color:#44585a;font-size:15px;line-height:1.45}
+    .folix-hero-slide .slider-content-18 .shop-btn{padding:12px 19px;font-size:12px}
+    .folix-hero-product{right:-2%;bottom:-2%;height:56%;max-width:48%;opacity:1}
+    .folix-hero-product--foam{right:0;height:55%}
+    .folix-hero-product--serum{right:0;height:56%}
+    .slider-active-3 .owl-dots{bottom:18px}
+}
