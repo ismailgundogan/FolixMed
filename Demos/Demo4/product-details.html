@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f8f8f4">
+<script>try { document.documentElement.dataset.theme = localStorage.getItem('folixmed-demo4-theme') === 'dark' ? 'dark' : 'light'; } catch {}</script>
+<title>FolixMed | Product details</title><link rel="icon" href="assets/favicon.png"><link rel="stylesheet" href="style.css"><script defer src="app.js"></script>
+</head><body>
+<div class="preloader" aria-hidden="true">
+  <div class="loading-container">
+    <div class="loading"></div>
+    <img class="loading-logo" src="assets/folixmed-logo-blue.png" alt="">
+    <p class="folix-loading-label" data-tr="Klinik yaklaşımdan ilham alan saç ve saç derisi bakımı">Clinically inspired hair &amp; scalp care</p>
+  </div>
+</div>
+<header><div class="brand-band"><div class="shell" data-tr="FolixMed / Klinik yaklaşımdan ilham alan saç bakımı">FolixMed / Clinically inspired hair care</div></div>
+<div class="shell mast"><a href="index.html#home" aria-label="FolixMed"><img class="logo" src="assets/logo.png" alt="FolixMed"></a><nav aria-label="Menu">
+  <div class="nav-group">
+    <button class="nav-trigger" aria-expanded="false" aria-controls="shop-menu" data-tr="Mağaza">Shop</button>
+    <div class="flyout shop-menu" id="shop-menu" hidden>
+      <div class="shop-items"></div>
+      <div class="shop-brand">
+        <img class="shop-logo" src="assets/folixmed-logo-blue.png" alt="FolixMed">
+        <p data-tr="Sağlıklı saçlar saç derisinde başlar.">Healthy hair begins with a healthy scalp.</p>
+        <a href="#shop"><span data-tr="Tüm ürünleri keşfet">Explore all products</span> →</a>
+      </div>
+    </div>
+  </div>
+  <a href="#about" data-tr="Hakkımızda">About FolixMed</a>
+  <div class="nav-group contact-group">
+    <button class="nav-trigger" aria-expanded="false" aria-controls="contact-menu" data-tr="İletişim">Contact</button>
+    <div class="flyout contact-menu" id="contact-menu" hidden>
+      <a href="#contact-1" data-tr="İletişim 1">Contact 1</a>
+      <a href="#contact-2" data-tr="İletişim 2">Contact 2</a>
+    </div>
+  </div>
+</nav>
+<div class="header-tools"><div class="langs" role="group" aria-label="Language / Dil"><button value="en">EN</button><span>/</span><button value="tr">TR</button></div>
+<button class="theme-toggle" type="button" aria-label="Dark mode" aria-pressed="false"><span aria-hidden="true">☾</span></button></div></div></header>
+<main>
+  <section class="product-banner">
+    <div class="shell">
+      <div class="product-path"><a href="index.html" data-tr="Ana sayfa">Home</a> / <a href="#shop" data-tr="Ürünler">Products</a> / <span id="current-name"></span></div>
+      <h1 id="product-title"></h1>
+    </div>
+  </section>
+  <article class="shell product-profile" aria-labelledby="product-title">
+    <div class="product-photo"><img id="product-image" alt=""></div>
+    <div class="product-copy">
+      <p class="eyebrow" data-tr="FolixMed ürün bilgisi">FolixMed product information</p>
+      <h2 id="product-category"></h2>
+      <p id="product-description"></p>
+      <h3 class="tag" data-tr="Öne çıkan içerikler">Featured ingredients</h3>
+      <ul id="product-ingredients"></ul>
+      <a class="cta" href="#contact"><span data-tr="Ürün hakkında bilgi al">Ask about this product</span><b aria-hidden="true">→</b></a>
+    </div>
+  </article>
+<section class="shell collection" id="shop" tabindex="-1"><div class="heading"><h2 data-tr="Bakım koleksiyonu">The care collection</h2><span class="rule"></span><span class="micro" data-tr="3 formül">3 formulas</span></div><div class="cards" id="cards"></div></section></main>
+<dialog id="panel"><button class="close" type="button" aria-label="Close / Kapat">×</button><div id="content"></div></dialog></body></html>
